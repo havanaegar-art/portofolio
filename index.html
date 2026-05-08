@@ -3,71 +3,61 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Havana Ega Rianto | Portfolio</title>
+  <title>Abayy Lezovka | Full Stack Developer</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
   <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap');
-
+    
     body { font-family: 'Inter', sans-serif; }
     .title-font { font-family: 'Space Grotesk', sans-serif; }
 
     .hero-bg {
-      background: radial-gradient(at center bottom, #4f46e5, #000000);
+      background: linear-gradient(135deg, #1e1b4b, #312e81, #000000);
     }
 
     .glass {
-      background: rgba(255, 255, 255, 0.06);
+      background: rgba(255, 255, 255, 0.05);
       backdrop-filter: blur(16px);
       border: 1px solid rgba(255, 255, 255, 0.1);
     }
-
-    .project-card {
-      transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
-    }
-    
-    .project-card:hover {
-      transform: translateY(-20px) scale(1.03);
-    }
   </style>
 </head>
-<body class="bg-black text-white overflow-x-hidden">
+<body class="bg-black text-white">
 
   <!-- Navbar -->
   <nav class="fixed top-0 w-full z-50 glass border-b border-white/10">
-    <div class="max-w-7xl mx-auto px-6 py-6 flex justify-between items-center">
-      <h1 class="text-3xl font-bold title-font tracking-tighter">
-        <span class="text-indigo-400">H</span>avana Ega Rianto
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+      <h1 class="text-3xl font-bold title-font tracking-tight">
+        <span class="text-indigo-400">&lt;</span> Abayy Lezovka <span class="text-indigo-400">/&gt;</span>
       </h1>
-      <div class="flex gap-10 text-lg">
+      <div class="flex gap-8 text-lg">
         <a href="#about" class="hover:text-indigo-400 transition">About</a>
-        <a href="#work" class="hover:text-indigo-400 transition">Work</a>
+        <a href="#education" class="hover:text-indigo-400 transition">Education</a>
+        <a href="#experience" class="hover:text-indigo-400 transition">Experience</a>
         <a href="#skills" class="hover:text-indigo-400 transition">Skills</a>
+        <a href="#projects" class="hover:text-indigo-400 transition">Projects</a>
         <a href="#contact" class="hover:text-indigo-400 transition">Contact</a>
       </div>
     </div>
   </nav>
 
   <!-- Hero -->
-  <section class="hero-bg min-h-screen flex items-center relative">
-    <div class="max-w-7xl mx-auto px-6 relative z-10 pt-20">
+  <section class="hero-bg min-h-screen flex items-center">
+    <div class="max-w-7xl mx-auto px-6 pt-20">
       <div class="max-w-3xl">
-        <p class="text-indigo-400 font-medium tracking-[4px] mb-4">HELLO, I'M</p>
-        <h1 class="text-7xl md:text-8xl font-bold title-font leading-none mb-6">
-          Havana Ega Rianto
+        <p class="text-indigo-400 tracking-widest mb-2">FULL STACK DEVELOPER</p>
+        <h1 class="text-6xl md:text-7xl font-bold title-font leading-tight mb-6">
+          Halo, saya <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 to-purple-400">Abayy Lezovka</span>
         </h1>
-        <p class="text-3xl md:text-4xl text-gray-300 mb-8">
-          Creative Developer & Digital Designer
+        <p class="text-2xl text-gray-300 mb-8">
+          Membuat aplikasi web yang cepat, scalable, dan user-friendly.
         </p>
-        <p class="text-gray-400 text-xl max-w-md">
-          Saya membuat website dan produk digital yang tidak hanya cantik, tapi juga menyenangkan digunakan.
-        </p>
-
-        <div class="mt-12 flex gap-5">
-          <a href="#work" class="px-8 py-5 bg-white text-black font-semibold rounded-2xl hover:bg-indigo-400 hover:text-white transition-all duration-300 flex items-center gap-3">
-            <i class="fas fa-briefcase"></i> Lihat Karya Saya
+        <div class="flex gap-4">
+          <a href="#projects" class="px-8 py-4 bg-indigo-600 hover:bg-indigo-500 rounded-2xl font-semibold flex items-center gap-2 transition">
+            <i class="fas fa-code"></i> Lihat Proyek
           </a>
-          <a href="#contact" class="px-8 py-5 border border-white/50 hover:border-white rounded-2xl transition-all duration-300">
+          <a href="#contact" class="px-8 py-4 border border-white/40 hover:border-white rounded-2xl font-semibold transition">
             Hubungi Saya
           </a>
         </div>
@@ -76,42 +66,137 @@
   </section>
 
   <!-- About -->
-  <section id="about" class="py-28">
+  <section id="about" class="py-24 bg-zinc-950">
     <div class="max-w-7xl mx-auto px-6">
-      <div class="grid md:grid-cols-2 gap-16 items-center">
-        <div>
-          <img src="https://via.placeholder.com/800x900/4f46e5/ffffff?text=FOTO+ANDA" 
-               class="rounded-3xl w-full" alt="Profile">
+      <h2 class="text-5xl font-bold title-font mb-12 text-center">Tentang Saya</h2>
+      <div class="max-w-3xl mx-auto text-lg text-gray-300 leading-relaxed text-center">
+        Saya adalah Full Stack Developer yang passionate dengan teknologi modern. 
+        Berpengalaman membangun aplikasi web dari nol hingga production-ready. 
+        Suka menulis clean code, mengoptimasi performa, dan menciptakan user experience yang menyenangkan.
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold title-font text-center mb-16">Pendidikan</h2>
+      
+      <div class="max-w-4xl mx-auto space-y-12">
+        <!-- Pendidikan 1 -->
+        <div class="glass p-8 rounded-3xl">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-semibold">Sarjana Teknik Informatika</h3>
+              <p class="text-indigo-400">Universitas Indonesia</p>
+            </div>
+            <div class="text-gray-400 mt-2 md:mt-0">
+              2020 - 2024
+            </div>
+          </div>
+          <p class="text-gray-300">IPK: 3.85/4.00 • Lulus dengan Predikat Cum Laude</p>
+          <p class="text-sm text-gray-400 mt-3">• Fokus pada Web Development, Mobile Development, dan Machine Learning</p>
         </div>
-        <div class="space-y-8">
-          <h2 class="text-5xl font-bold title-font">Tentang Saya</h2>
-          <p class="text-lg text-gray-300 leading-relaxed">
-            Saya adalah developer yang obsesi dengan detail dan pengalaman pengguna. 
-            Dengan lebih dari 3 tahun pengalaman, saya telah membantu berbagai brand dan startup 
-            membangun identitas digital yang kuat.
-          </p>
+
+        <!-- Pendidikan 2 -->
+        <div class="glass p-8 rounded-3xl">
+          <div class="flex flex-col md:flex-row justify-between mb-4">
+            <div>
+              <h3 class="text-2xl font-semibold">SMK</h3>
+              <p class="text-indigo-400">SMK PGRI WLINGI</p>
+            </div>
+            <div class="text-gray-400 mt-2 md:mt-0">
+              2017 - 2020
+            </div>
+          </div>
+          <p class="text-gray-300">Jurusan MIPA • Ketua OSIS Bidang IT</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Work -->
-  <section id="work" class="py-28 bg-zinc-950">
+  <!-- Experience -->
+  <section id="experience" class="py-24 bg-zinc-950">
     <div class="max-w-7xl mx-auto px-6">
-      <h2 class="text-5xl font-bold title-font text-center mb-16">Featured Work</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="project-card glass rounded-3xl overflow-hidden">
-          <div class="h-80 bg-gradient-to-br from-indigo-500 to-purple-600 flex items-center justify-center text-6xl">🌐</div>
+      <h2 class="text-5xl font-bold title-font text-center mb-16">Pengalaman Kerja</h2>
+      <div class="max-w-4xl mx-auto space-y-12">
+        <div>
+          <p class="text-indigo-400">2024 - Sekarang</p>
+          <h3 class="text-2xl font-semibold">Full Stack Developer • Freelance</h3>
+          <p class="text-gray-400">Membangun berbagai website dan aplikasi untuk client lokal & internasional.</p>
+        </div>
+        <div>
+          <p class="text-indigo-400">2023 - 2024</p>
+          <h3 class="text-2xl font-semibold">Junior Web Developer • PT. Digital Tech Indonesia</h3>
+          <p class="text-gray-400">Mengembangkan internal system dan landing page perusahaan.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="py-24">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold title-font text-center mb-16">Skills & Technologies</h2>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="glass p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold mb-6 text-indigo-400">Frontend</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>● React.js / Next.js</li>
+            <li>● TypeScript</li>
+            <li>● Tailwind CSS</li>
+            <li>● JavaScript (ES6+)</li>
+          </ul>
+        </div>
+        <div class="glass p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold mb-6 text-indigo-400">Backend</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>● Node.js & Express</li>
+            <li>● Python (Django/Flask)</li>
+            <li>● REST API & GraphQL</li>
+          </ul>
+        </div>
+        <div class="glass p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold mb-6 text-indigo-400">Database & Tools</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>● PostgreSQL • MongoDB</li>
+            <li>● Git & GitHub</li>
+            <li>● Docker</li>
+            <li>● Vercel • Netlify</li>
+          </ul>
+        </div>
+        <div class="glass p-8 rounded-3xl">
+          <h3 class="text-xl font-semibold mb-6 text-indigo-400">Lainnya</h3>
+          <ul class="space-y-3 text-gray-300">
+            <li>● Problem Solving</li>
+            <li>● UI/UX Design</li>
+            <li>● Figma</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="py-24 bg-zinc-950">
+    <div class="max-w-7xl mx-auto px-6">
+      <h2 class="text-5xl font-bold title-font text-center mb-16">Featured Projects</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="glass rounded-3xl overflow-hidden">
+          <div class="h-64 bg-gradient-to-br from-blue-600 to-cyan-500 flex items-center justify-center text-7xl">📊</div>
           <div class="p-8">
-            <h3 class="text-2xl font-semibold mb-2">Project One</h3>
-            <p class="text-gray-400">Landing page modern dengan animasi memukau</p>
+            <h3 class="font-bold text-2xl mb-2">Sistem Manajemen Inventory</h3>
+            <p class="text-gray-400">Aplikasi web full-stack untuk mengelola stok, penjualan, dan laporan realtime.</p>
+            <p class="text-sm text-indigo-400 mt-4">Next.js • TypeScript • Supabase • Tailwind</p>
           </div>
         </div>
-        <div class="project-card glass rounded-3xl overflow-hidden">
-          <div class="h-80 bg-gradient-to-br from-pink-500 to-rose-600 flex items-center justify-center text-6xl">📱</div>
+
+        <div class="glass rounded-3xl overflow-hidden">
+          <div class="h-64 bg-gradient-to-br from-purple-600 to-pink-500 flex items-center justify-center text-7xl">🛒</div>
           <div class="p-8">
-            <h3 class="text-2xl font-semibold mb-2">Project Two</h3>
-            <p class="text-gray-400">Mobile app & dashboard untuk e-commerce</p>
+            <h3 class="font-bold text-2xl mb-2">E-Commerce Platform</h3>
+            <p class="text-gray-400">Toko online lengkap dengan payment gateway dan admin dashboard.</p>
+            <p class="text-sm text-indigo-400 mt-4">React • Node.js • MongoDB • Midtrans</p>
           </div>
         </div>
       </div>
@@ -119,18 +204,19 @@
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-28">
+  <section id="contact" class="py-24">
     <div class="max-w-4xl mx-auto text-center px-6">
-      <h2 class="text-6xl font-bold title-font mb-6">Mari buat sesuatu yang luar biasa</h2>
+      <h2 class="text-5xl font-bold title-font mb-6">Mari Berkolaborasi</h2>
+      <p class="text-xl text-gray-400 mb-10">Saya terbuka untuk freelance, full-time, atau diskusi proyek menarik.</p>
       <a href="mailto:emailkamu@gmail.com" 
-         class="inline-block px-12 py-6 text-xl font-semibold bg-gradient-to-r from-indigo-500 to-purple-600 rounded-3xl hover:scale-105 transition">
-        Kirim Email →
+         class="inline-block px-10 py-6 bg-indigo-600 hover:bg-indigo-500 text-lg font-semibold rounded-3xl transition">
+        Kirim Email ke Saya
       </a>
     </div>
   </section>
 
   <footer class="py-12 text-center text-gray-500 border-t border-white/10">
-    © 2026 Nama Kamu • Crafted with passion
+    © 2026 Nama Kamu • Full Stack Developer
   </footer>
 
 </body>
